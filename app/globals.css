@@ -1555,8 +1555,22 @@ img {
   border-radius: 50%;
   background: #20b85a;
   color: white;
-  font-size: 17px;
-  transform: rotate(-18deg);
+}
+
+.whatsapp-float svg {
+  width: 21px;
+  height: 21px;
+  display: block;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.75;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.whatsapp-float svg path:last-child {
+  fill: currentColor;
+  stroke: none;
 }
 
 .whatsapp-float i {
