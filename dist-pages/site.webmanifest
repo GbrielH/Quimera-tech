@@ -1,0 +1,17 @@
+{
+  "name": "Quimera Tech",
+  "short_name": "Quimera Tech",
+  "description": "Sites, sistemas e soluções digitais sob medida.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#060606",
+  "theme_color": "#e30613",
+  "icons": [
+    {
+      "src": "./quimera-logo.png",
+      "sizes": "640x640",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
