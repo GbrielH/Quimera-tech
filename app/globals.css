@@ -996,6 +996,11 @@ img {
   transition: transform 450ms ease;
 }
 
+.project-preview.agro .project-cover {
+  object-fit: contain;
+  object-position: center center;
+}
+
 .project-card-link:hover .project-cover {
   transform: scale(1.025);
 }
