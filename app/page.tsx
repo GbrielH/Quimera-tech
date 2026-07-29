@@ -51,6 +51,7 @@ const projects = [
     className: "lica",
     category: "Construção civil",
     title: "Lica Construções",
+    href: "https://gbrielh.github.io/lica-construcoes/",
     description:
       "Presença digital profissional com foco em confiança, serviços e contato rápido pelo WhatsApp.",
     chips: ["Site institucional", "Responsivo"],
@@ -421,11 +422,15 @@ export default function Home() {
             const content = (
               <>
               <div className={`project-preview ${project.className}`}>
-                {project.className === "agro" ? (
+                {project.className === "lica" || project.className === "agro" ? (
                   <img
                     className="project-cover"
-                    src="./agro-pesca-brasil.png"
-                    alt="Página inicial do site Agro & Pesca Brasil"
+                    src={
+                      project.className === "lica"
+                        ? "./lica-construcoes.png"
+                        : "./agro-pesca-brasil.png"
+                    }
+                    alt={`Página inicial do site ${project.title}`}
                   />
                 ) : (
                   <>
