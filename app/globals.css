@@ -996,6 +996,7 @@ img {
   transition: transform 450ms ease;
 }
 
+.project-preview.lica .project-cover,
 .project-preview.agro .project-cover {
   object-fit: contain;
   object-position: center center;
