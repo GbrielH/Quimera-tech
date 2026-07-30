@@ -66,12 +66,12 @@ const projects = [
     chips: ["Catálogo", "Identidade digital"],
   },
   {
-    className: "quimera",
-    category: "Tecnologia",
-    title: "Seu projeto pode ser o próximo",
+    className: "finflow",
+    category: "Aplicativo financeiro",
+    title: "FinFlow",
     description:
-      "Uma solução construída para o seu objetivo, com design próprio e comunicação alinhada à sua marca.",
-    chips: ["Projeto exclusivo", "Sob medida"],
+      "Aplicativo de gestão financeira pessoal com contas, cartões, objetivos, agendamentos e visão completa do fluxo de caixa.",
+    chips: ["Em desenvolvimento", "Aplicativo mobile", "Finanças"],
   },
 ];
 
@@ -432,6 +432,38 @@ export default function Home() {
                     }
                     alt={`Página inicial do site ${project.title}`}
                   />
+                ) : project.className === "finflow" ? (
+                  <div className="finflow-showcase" aria-label="Prévia do aplicativo FinFlow">
+                    <div className="finflow-status">
+                      <span />
+                      Em desenvolvimento
+                    </div>
+                    <div className="finflow-phone">
+                      <div className="finflow-speaker" />
+                      <div className="finflow-appbar">
+                        <img src="./finflow-icon.png" alt="" />
+                        <span>FinFlow</span>
+                      </div>
+                      <small>Saldo disponível</small>
+                      <strong>R$ 8.420,00</strong>
+                      <div className="finflow-summary">
+                        <i />
+                        <i />
+                      </div>
+                      <div className="finflow-chart">
+                        {[38, 58, 45, 76, 63, 88].map((height, index) => (
+                          <i key={index} style={{ height: `${height}%` }} />
+                        ))}
+                      </div>
+                    </div>
+                    <div className="finflow-brand">
+                      <img src="./finflow-icon.png" alt="" />
+                      <div>
+                        <small>CONTROLE FINANCEIRO</small>
+                        <strong>Seu dinheiro.<br />Mais claro.</strong>
+                      </div>
+                    </div>
+                  </div>
                 ) : (
                   <>
                     <div className="preview-nav">
