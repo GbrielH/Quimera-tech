@@ -67,11 +67,12 @@ const projects = [
   },
   {
     className: "finflow",
-    category: "Aplicativo financeiro",
-    title: "FinFlow",
+    category: "Plataforma financeira",
+    title: "FinFlow 2.0",
+    href: "https://finflow-financas.netlify.app/login",
     description:
-      "Aplicativo de gestão financeira pessoal com contas, cartões, objetivos, agendamentos e visão completa do fluxo de caixa.",
-    chips: ["Em desenvolvimento", "Aplicativo mobile", "Finanças"],
+      "Controle financeiro pessoal e compartilhado no site e no aplicativo, com fluxo de caixa, objetivos, cartões, relatórios e assistência por IA.",
+    chips: ["Site + aplicativo", "FinFlow 2.0", "Disponível online"],
   },
 ];
 
@@ -433,36 +434,23 @@ export default function Home() {
                     alt={`Página inicial do site ${project.title}`}
                   />
                 ) : project.className === "finflow" ? (
-                  <div className="finflow-showcase" aria-label="Prévia do aplicativo FinFlow">
+                  <div className="finflow-showcase">
+                    <img
+                      className="project-cover finflow-cover"
+                      src="./finflow-web.png"
+                      alt=""
+                      width={1920}
+                      height={900}
+                      loading="lazy"
+                      decoding="async"
+                    />
                     <div className="finflow-status">
                       <span />
-                      Em desenvolvimento
+                      Disponível online
                     </div>
-                    <div className="finflow-phone">
-                      <div className="finflow-speaker" />
-                      <div className="finflow-appbar">
-                        <img src="./finflow-icon.png" alt="" />
-                        <span>FinFlow</span>
-                      </div>
-                      <small>Saldo disponível</small>
-                      <strong>R$ 8.420,00</strong>
-                      <div className="finflow-summary">
-                        <i />
-                        <i />
-                      </div>
-                      <div className="finflow-chart">
-                        {[38, 58, 45, 76, 63, 88].map((height, index) => (
-                          <i key={index} style={{ height: `${height}%` }} />
-                        ))}
-                      </div>
-                    </div>
-                    <div className="finflow-brand">
-                      <img src="./finflow-icon.png" alt="" />
-                      <div>
-                        <small>CONTROLE FINANCEIRO</small>
-                        <strong>Seu dinheiro.<br />Mais claro.</strong>
-                      </div>
-                    </div>
+                    <span className="finflow-preview-cta">
+                      Abrir FinFlow <span aria-hidden="true">↗</span>
+                    </span>
                   </div>
                 ) : (
                   <>
@@ -508,7 +496,7 @@ export default function Home() {
                 href={project.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label={`Acessar o site ${project.title}`}
+                aria-label={`Abrir ${project.title} em uma nova aba`}
                 key={project.title}
                 data-reveal
               >

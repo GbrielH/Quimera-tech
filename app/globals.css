@@ -1046,160 +1046,95 @@ img {
 .finflow-showcase {
   position: absolute;
   inset: 0;
+  overflow: hidden;
+  background: #061116;
+}
+
+.finflow-showcase::after {
+  content: "";
+  position: absolute;
+  z-index: 3;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(3, 13, 13, 0.58),
+    transparent 42%
+  );
+  box-shadow: inset 0 0 0 1px rgba(87, 224, 170, 0.1);
+  pointer-events: none;
+}
+
+.finflow-cover {
+  object-fit: cover;
+  object-position: center top;
+  transition:
+    transform 450ms ease,
+    filter 450ms ease;
+}
+
+.project-card-link:hover .finflow-cover {
+  filter: saturate(1.08) brightness(1.04);
+  transform: scale(1.018);
 }
 
 .finflow-status {
   position: absolute;
   z-index: 4;
-  top: 23px;
-  right: 24px;
+  top: 20px;
+  right: 20px;
   display: flex;
   align-items: center;
   gap: 7px;
-  padding: 8px 11px;
-  border: 1px solid rgba(105, 225, 201, 0.25);
+  padding: 8px 12px;
+  border: 1px solid rgba(87, 224, 170, 0.32);
   border-radius: 999px;
-  background: rgba(9, 22, 20, 0.78);
-  color: #a3e6d8;
+  background: rgba(4, 19, 18, 0.86);
+  color: #b8f2dc;
   font-size: 8px;
   font-weight: 720;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   backdrop-filter: blur(9px);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.22);
 }
 
 .finflow-status span {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: #47d2b5;
-  box-shadow: 0 0 0 4px rgba(71, 210, 181, 0.12);
+  background: #57e0aa;
+  box-shadow: 0 0 0 4px rgba(87, 224, 170, 0.13);
 }
 
-.finflow-phone {
+.finflow-preview-cta {
   position: absolute;
-  z-index: 3;
-  width: 184px;
-  height: 300px;
-  right: 54px;
-  bottom: -45px;
-  padding: 35px 16px 16px;
-  border: 5px solid #171c1c;
-  border-radius: 32px;
-  background: #f4f1ea;
-  color: #263633;
-  box-shadow: 0 28px 55px rgba(0, 0, 0, 0.48);
-  transform: rotate(5deg);
-}
-
-.finflow-speaker {
-  position: absolute;
-  width: 48px;
-  height: 5px;
-  top: 14px;
-  left: calc(50% - 24px);
-  border-radius: 8px;
-  background: #c8cfcc;
-}
-
-.finflow-appbar {
+  z-index: 4;
+  right: 20px;
+  bottom: 20px;
   display: flex;
   align-items: center;
-  gap: 7px;
-  margin-bottom: 20px;
-  color: #172522;
-  font-size: 11px;
-  font-weight: 820;
-}
-
-.finflow-appbar img {
-  width: 25px;
-  height: 25px;
-  border-radius: 8px;
-}
-
-.finflow-phone > small {
-  display: block;
-  color: #75817e;
-  font-size: 7px;
-}
-
-.finflow-phone > strong {
-  display: block;
-  margin-top: 5px;
-  font-size: 18px;
-  letter-spacing: -0.05em;
-}
-
-.finflow-summary {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 7px;
-  margin-top: 19px;
-}
-
-.finflow-summary i {
-  height: 48px;
-  border-radius: 9px;
-  background: #dcefe9;
-}
-
-.finflow-summary i:last-child {
-  background: #f2dfd7;
-}
-
-.finflow-chart {
-  height: 68px;
-  display: flex;
-  align-items: end;
-  gap: 6px;
-  margin-top: 14px;
-  padding: 11px;
-  border-radius: 10px;
-  background: white;
-}
-
-.finflow-chart i {
-  flex: 1;
-  min-height: 8px;
-  border-radius: 3px 3px 1px 1px;
-  background: #2a9d8f;
-}
-
-.finflow-brand {
-  position: absolute;
-  z-index: 2;
-  left: 43px;
-  top: 105px;
-  display: flex;
-  align-items: center;
-  gap: 14px;
-}
-
-.finflow-brand > img {
-  width: 60px;
-  height: 60px;
-  border-radius: 17px;
-  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.35);
-}
-
-.finflow-brand small,
-.finflow-brand strong {
-  display: block;
-}
-
-.finflow-brand small {
-  margin-bottom: 8px;
-  color: #6ed4c0;
-  font-size: 6px;
-  letter-spacing: 0.16em;
-}
-
-.finflow-brand strong {
+  gap: 9px;
+  padding: 10px 13px;
+  border: 1px solid rgba(87, 224, 170, 0.32);
+  border-radius: 4px;
+  background: rgba(4, 19, 18, 0.9);
   color: white;
-  font-size: 21px;
-  line-height: 1.05;
-  letter-spacing: -0.04em;
+  font-size: 9px;
+  font-weight: 760;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  backdrop-filter: blur(9px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.3);
+}
+
+.finflow-preview-cta > span {
+  color: #57e0aa;
+  font-size: 13px;
+  transition: transform 180ms ease;
+}
+
+.project-card-link:hover .finflow-preview-cta > span {
+  transform: translate(2px, -2px);
 }
 
 .preview-nav {
@@ -2201,33 +2136,18 @@ img {
     height: 245px;
   }
 
-  .finflow-phone {
-    width: 148px;
-    height: 250px;
-    right: 22px;
-    bottom: -42px;
-    padding: 30px 12px 12px;
-  }
-
-  .finflow-brand {
-    left: 23px;
-    top: 82px;
-    gap: 10px;
-  }
-
-  .finflow-brand > img {
-    width: 45px;
-    height: 45px;
-    border-radius: 13px;
-  }
-
-  .finflow-brand strong {
-    font-size: 17px;
-  }
-
   .finflow-status {
-    top: 16px;
-    right: 14px;
+    top: 13px;
+    right: 13px;
+    padding: 7px 10px;
+    font-size: 7px;
+  }
+
+  .finflow-preview-cta {
+    right: 13px;
+    bottom: 13px;
+    padding: 8px 10px;
+    font-size: 8px;
   }
 
   .preview-copy {
