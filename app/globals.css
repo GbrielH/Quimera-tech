@@ -971,7 +971,7 @@ img {
   outline-offset: 4px;
 }
 
-.project-card:last-child {
+.project-card:last-child:nth-child(odd) {
   grid-column: 4 / span 6;
 }
 
@@ -999,7 +999,8 @@ img {
 }
 
 .project-preview.lica .project-cover,
-.project-preview.agro .project-cover {
+.project-preview.agro .project-cover,
+.project-preview.brands .project-cover {
   object-fit: contain;
   object-position: center center;
 }
@@ -1029,6 +1030,12 @@ img {
   background:
     radial-gradient(circle at 75% 44%, rgba(56, 181, 75, 0.31), transparent 30%),
     linear-gradient(135deg, #0e1b12, #070907);
+}
+
+.project-preview.brands {
+  background:
+    radial-gradient(circle at 76% 45%, rgba(40, 100, 255, 0.32), transparent 32%),
+    linear-gradient(135deg, #123f46, #071b1f);
 }
 
 .project-preview.quimera {
@@ -1880,7 +1887,7 @@ img {
   }
 
   .project-card,
-  .project-card:last-child {
+  .project-card:last-child:nth-child(odd) {
     grid-column: auto;
   }
 

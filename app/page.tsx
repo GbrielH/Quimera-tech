@@ -74,6 +74,15 @@ const projects = [
       "Controle financeiro pessoal e compartilhado no site e no aplicativo, com fluxo de caixa, objetivos, cartões, relatórios e assistência por IA.",
     chips: ["Site + aplicativo", "FinFlow 2.0", "Disponível online"],
   },
+  {
+    className: "brands",
+    category: "Uniformes personalizados",
+    title: "Brands Sports",
+    href: "https://brands-sports.github.io/Site/",
+    description:
+      "Site institucional e catálogo digital de uniformes e modelos personalizados, com atendimento direto pelo WhatsApp.",
+    chips: ["Site institucional", "Catálogo digital", "Responsivo"],
+  },
 ];
 
 const faqs = [
@@ -423,13 +432,17 @@ export default function Home() {
             const content = (
               <>
               <div className={`project-preview ${project.className}`}>
-                {project.className === "lica" || project.className === "agro" ? (
+                {project.className === "lica" ||
+                project.className === "agro" ||
+                project.className === "brands" ? (
                   <img
                     className="project-cover"
                     src={
                       project.className === "lica"
                         ? "./lica-construcoes.png"
-                        : "./agro-pesca-brasil.png"
+                        : project.className === "agro"
+                          ? "./agro-pesca-brasil.png"
+                          : "./brands-sports.svg"
                     }
                     alt={`Página inicial do site ${project.title}`}
                   />
