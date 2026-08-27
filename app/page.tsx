@@ -69,7 +69,7 @@ const projects = [
     className: "finflow",
     category: "Plataforma financeira",
     title: "FinFlow 2.0",
-    href: "https://finflow-financas.netlify.app/login",
+    href: "https://finflow-mauve-chi.vercel.app/",
     description:
       "Controle financeiro pessoal e compartilhado no site e no aplicativo, com fluxo de caixa, objetivos, cartões, relatórios e assistência por IA.",
     chips: ["Site + aplicativo", "FinFlow 2.0", "Disponível online"],
@@ -442,7 +442,7 @@ export default function Home() {
                         ? "./lica-construcoes.png"
                         : project.className === "agro"
                           ? "./agro-pesca-brasil.png"
-                          : "./brands-sports.svg"
+                          : "./brands-sports.png"
                     }
                     alt={`Página inicial do site ${project.title}`}
                   />

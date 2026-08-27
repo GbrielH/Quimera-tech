@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 900" role="img" aria-labelledby="title desc">
+  <title id="title">Página inicial da Brands Sports</title>
+  <desc id="desc">Miniatura do site de uniformes personalizados da Brands Sports.</desc>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#082c32" flood-opacity=".14"/>
+    </filter>
+    <linearGradient id="instagram" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#833ab4"/>
+      <stop offset=".58" stop-color="#e1306c"/>
+      <stop offset="1" stop-color="#ff603d"/>
+    </linearGradient>
+    <pattern id="jersey-lines" width="22" height="22" patternUnits="userSpaceOnUse" patternTransform="rotate(32)">
+      <rect width="22" height="22" fill="#101b24"/>
+      <rect width="5" height="22" fill="#18374c"/>
+    </pattern>
+    <g id="jersey-dark">
+      <path d="M34 18 61 3h48l27 15 32 16-17 39-22-8v100H41V65l-22 8L2 34Z" fill="url(#jersey-lines)" stroke="#061016" stroke-width="4"/>
+      <path d="M61 3c3 17 43 17 48 0" fill="none" stroke="#d9e2e6" stroke-width="8"/>
+      <path d="m51 83 69-37M48 111l81-44M60 136l62-33" stroke="#2864ff" stroke-width="5" opacity=".75"/>
+    </g>
+    <g id="jersey-orange">
+      <path d="M34 18 61 3h48l27 15 32 16-17 39-22-8v100H41V65l-22 8L2 34Z" fill="#121a20" stroke="#061016" stroke-width="4"/>
+      <path d="M61 3c3 17 43 17 48 0" fill="none" stroke="#d9e2e6" stroke-width="8"/>
+      <path d="M42 46c37 13 67 42 88 78M39 82c29 8 58 32 86 69M67 23c16 11 31 24 44 41" fill="none" stroke="#f28b16" stroke-width="8" opacity=".9"/>
+    </g>
+  </defs>
+
+  <rect width="1920" height="900" fill="#f5f0e6"/>
+  <rect width="1920" height="35" fill="#082c32"/>
+  <text x="730" y="23" fill="#aebcb9" font-family="Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="1.4">ATENDIMENTO E PEDIDOS PELO WHATSAPP</text>
+  <text x="1025" y="23" fill="#ffffff" font-family="Arial, sans-serif" font-size="11" font-weight="800" letter-spacing="1">CHAMAR NO WHATSAPP  →</text>
+
+  <g transform="translate(278 46)" fill="#123f46">
+    <path d="M12 0h26c24 0 38 10 38 26 0 11-7 19-18 23 15 4 23 13 23 27 0 20-17 31-46 31H12Zm20 19v23h7c11 0 17-4 17-12s-6-11-17-11Zm0 41v28h10c13 0 19-5 19-14s-7-14-20-14Z"/>
+    <path d="M3 4h7v100H3z"/>
+    <path d="m5 86 61-49 6 7-61 50z" fill="#f5f0e6"/>
+    <text x="-1" y="119" font-family="Arial, sans-serif" font-size="13" font-weight="900" letter-spacing="1">BRANDS</text>
+    <text x="12" y="132" font-family="Arial, sans-serif" font-size="9" font-weight="800" letter-spacing="1.2">SPORT</text>
+  </g>
+
+  <g fill="#123f46" font-family="Arial, sans-serif" font-size="13" font-weight="800" letter-spacing=".5">
+    <text x="602" y="83">CATÁLOGO</text>
+    <text x="724" y="83">SOLUÇÕES</text>
+    <text x="840" y="83">COMO PEDIR</text>
+    <text x="970" y="83">POR QUE A BRANDS</text>
+  </g>
+
+  <g transform="translate(1300 56)">
+    <rect width="196" height="46" fill="#123f46"/>
+    <circle cx="29" cy="23" r="9" fill="none" stroke="#fff" stroke-width="2"/>
+    <path d="m23 17 2 7 6 3" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+    <text x="48" y="28" fill="#fff" font-family="Arial, sans-serif" font-size="12" font-weight="900">FALAR COM A BRANDS</text>
+  </g>
+  <g transform="translate(1506 56)">
+    <rect width="137" height="46" fill="url(#instagram)"/>
+    <rect x="18" y="15" width="16" height="16" rx="5" fill="none" stroke="#fff" stroke-width="2"/>
+    <circle cx="26" cy="23" r="4" fill="none" stroke="#fff" stroke-width="2"/>
+    <text x="45" y="28" fill="#fff" font-family="Arial, sans-serif" font-size="12" font-weight="900">INSTAGRAM</text>
+  </g>
+
+  <g transform="translate(263 183)">
+    <rect y="4" width="28" height="3" fill="#ff603d"/>
+    <text x="38" y="10" fill="#123f46" font-family="Arial, sans-serif" font-size="11" font-weight="900" letter-spacing="3">UNIFORMES QUE REPRESENTAM</text>
+  </g>
+
+  <g font-family="Arial Black, Arial, sans-serif" font-weight="900" letter-spacing="-6">
+    <text x="262" y="324" fill="#102f34" font-size="116">VISTA O QUE</text>
+    <text x="263" y="434" fill="#2864ff" font-size="111" font-style="italic">UNE O SEU</text>
+    <text x="263" y="544" fill="#2864ff" font-size="111" font-style="italic">TIME.</text>
+  </g>
+
+  <g fill="#52696b" font-family="Arial, sans-serif" font-size="20">
+    <text x="263" y="607">Modelos marcantes para equipes, turmas, empresas e eventos.</text>
+    <text x="263" y="640">Escolha uma referência do catálogo ou peça um modelo</text>
+    <text x="263" y="673">personalizado — a gente cuida do restante.</text>
+  </g>
+
+  <g transform="translate(263 714)">
+    <rect width="234" height="54" fill="#2864ff"/>
+    <text x="25" y="34" fill="#fff" font-family="Arial, sans-serif" font-size="13" font-weight="900">EXPLORAR O CATÁLOGO</text>
+    <text x="195" y="35" fill="#fff" font-family="Arial, sans-serif" font-size="23">→</text>
+  </g>
+  <g transform="translate(523 714)" fill="#123f46">
+    <circle cx="12" cy="26" r="9" fill="none" stroke="#123f46" stroke-width="2"/>
+    <path d="m7 21 2 7 6 3" fill="none" stroke="#123f46" stroke-width="2" stroke-linecap="round"/>
+    <text x="35" y="31" font-family="Arial, sans-serif" font-size="13" font-weight="900">CHAMAR NO WHATSAPP</text>
+    <rect x="35" y="49" width="185" height="1"/>
+  </g>
+
+  <g transform="translate(1078 268)">
+    <rect width="520" height="500" fill="#2864ff" transform="rotate(-1 260 250)"/>
+
+    <g transform="translate(-50 35) rotate(-3 190 225)" filter="url(#shadow)">
+      <rect width="370" height="455" fill="#fffdf8"/>
+      <use href="#jersey-orange" transform="translate(42 57) scale(1.15)"/>
+      <use href="#jersey-dark" transform="translate(170 63) scale(1.13)"/>
+      <text x="31" y="405" fill="#ff603d" font-family="Arial, sans-serif" font-size="10" font-weight="900" letter-spacing="2">INTERCLASSE</text>
+      <text x="31" y="432" fill="#123f46" font-family="Arial Black, Arial, sans-serif" font-size="20" font-weight="900">MODELO 881 · TIGRE</text>
+    </g>
+
+    <g transform="translate(377 -20) rotate(4 95 112)" filter="url(#shadow)">
+      <rect width="190" height="220" fill="#fffdf8"/>
+      <use href="#jersey-dark" transform="translate(18 38) scale(.67)"/>
+      <text x="15" y="199" fill="#ff603d" font-family="Arial, sans-serif" font-size="9" font-weight="900" letter-spacing="2">TERCEIRÃO</text>
+    </g>
+
+    <g transform="translate(354 308) rotate(-4 92 106)" filter="url(#shadow)">
+      <rect width="184" height="212" fill="#fffdf8"/>
+      <path d="M37 53 63 37h42l26 16 24 12-13 32-20-7v83H47V90l-20 7-13-32Z" fill="#2864ff" stroke="#184cca" stroke-width="3"/>
+      <path d="M63 37c4 15 37 15 42 0" fill="none" stroke="#dfe8ef" stroke-width="7"/>
+      <path d="m38 102 95-39M45 133l91-38M56 160l70-29" stroke="#123f46" stroke-width="5" opacity=".65"/>
+    </g>
+
+    <g transform="translate(233 425)">
+      <rect width="202" height="61" fill="#f2cf4a"/>
+      <text x="18" y="38" fill="#123f46" font-family="Arial, sans-serif" font-size="25" font-weight="900">+</text>
+      <text x="48" y="27" fill="#123f46" font-family="Arial, sans-serif" font-size="10" font-weight="900">PERSONALIZE CORES,</text>
+      <text x="48" y="42" fill="#123f46" font-family="Arial, sans-serif" font-size="10" font-weight="900">NOMES, NÚMEROS E LOGOS.</text>
+    </g>
+  </g>
+
+  <line x1="263" y1="817" x2="862" y2="817" stroke="#b9c1bd"/>
+  <g fill="#123f46" font-family="Arial Black, Arial, sans-serif" font-weight="900">
+    <text x="263" y="852" font-size="23">694</text>
+    <text x="468" y="852" font-size="23">100%</text>
+    <text x="676" y="852" font-size="23">DIRETO</text>
+  </g>
+  <g fill="#617577" font-family="Arial, sans-serif" font-size="10" font-weight="700">
+    <text x="263" y="870">MODELOS PARA ESCOLHER</text>
+    <text x="468" y="870">PERSONALIZÁVEL</text>
+    <text x="676" y="870">COM NOSSO ATENDIMENTO</text>
+  </g>
+
+  <rect y="884" width="1920" height="16" fill="#123f46"/>
+</svg>
